@@ -1,0 +1,39 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+package="com.github.alexghr.bulkshare">
+
+<application
+    android:allowBackup="true"
+    android:icon="@drawable/icon"
+    android:label="@string/app_name"
+    android:theme="@style/Theme.BulkShare">
+
+    <activity android:name=".ShareActivity"
+        android:finishOnTaskLaunch="true"
+        android:excludeFromRecents="true"
+        android:label="@string/share_chooser_name"
+        android:screenOrientation="behind"
+        android:theme="@android:style/Theme.NoDisplay">
+
+        <intent-filter>
+            <action android:name="android.intent.action.SEND"/>
+            <category android:name="android.intent.category.DEFAULT"/>
+            <data android:mimeType="text/plain"/>
+        </intent-filter>
+
+    </activity>
+
+    <activity android:name=".EmailActivity"
+        android:screenOrientation="portrait">
+
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN"/>
+            <category android:name="android.intent.category.LAUNCHER"/>
+        </intent-filter>
+
+    </activity>
+
+    <activity android:name=".SettingsActivity"
+        android:screenOrientation="portrait"/>
+
+</application>
+</manifest>

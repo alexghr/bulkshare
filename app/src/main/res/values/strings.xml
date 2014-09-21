@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Bulk Share</string>
+    <string name="share_chooser_name">Add to Bulk Share</string>
+
+    <string name="item_long_press_open_in_browser">Open in browser</string>
+    <string name="item_long_press_copy_to_clipboard">Copy link to clipboard</string>
+    <string name="item_long_press_delete">Delete</string>
+    <string name="item_long_press_toggle_check">Toggle check</string>
+
+    <string name="pref_email_cc_key">pref_email</string>
+    <string name="pref_theme_key">pref_key</string>
+
+    <string name="pref_email_cc_title">Email to</string>
+    <string name="pref_theme_title">Theme</string>
+
+    <string name="pref_email_cc_summary">Pre-insert these emails when sharing. Separate them by one space.</string>
+    <string name="pref_theme_summary">Choose a theme for Bulk Share</string>
+
+    <string name="pref_theme_holo_dark">Holo Dark</string>
+    <string name="pref_theme_holo_light">Holo Light</string>
+
+    <string name="pref_theme_holo_dark_value">0</string>
+    <string name="pref_theme_holo_light_value">1</string>
+
+    <string name="pref_theme_default_value">@string/pref_theme_holo_dark_value</string>
+</resources>
