@@ -1,6 +1,5 @@
 package com.github.alexghr.bulkshare;
 
-import android.R;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.preference.PreferenceActivity;
@@ -18,7 +17,7 @@ public class SettingsActivity extends PreferenceActivity {
             setTheme(android.R.style.Theme_Holo_Light);
         }
 
-        getFragmentManager().beginTransaction().replace(R.id.content, new SettingsFragment()).commit();
+        getFragmentManager().beginTransaction().replace(android.R.id.content, new SettingsFragment()).commit();
 
         super.onCreate(savedInstanceState);
     }

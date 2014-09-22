@@ -1,15 +1,15 @@
 package com.github.alexghr.bulkshare;
 
+import android.app.Activity;
+import android.app.Fragment;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
-import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 
-public class EmailActivity extends FragmentActivity {
+public class EmailActivity extends Activity {
 
     public static final int MENU_ITEM_ID_SETTINGS = 0x39afd;
     private Fragment fragment;
@@ -32,7 +32,7 @@ public class EmailActivity extends FragmentActivity {
         fragmentArgs.putInt(LinksFragment.ARGUMENT_LIST_ID, 1);
         fragment = Fragment.instantiate(this, LinksFragment.class.getName(), fragmentArgs);
 
-        getSupportFragmentManager().beginTransaction().replace(R.id.flListContainer, fragment).commit();
+        getFragmentManager().beginTransaction().replace(R.id.flListContainer, fragment).commit();
     }
 
     @Override
