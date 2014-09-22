@@ -3,17 +3,17 @@
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
 
     <ListPreference
-            android:title="@string/pref_theme_title"
-            android:entries="@array/pref_theme_entries"
-            android:entryValues="@array/pref_theme_values"
-            android:key="@string/pref_theme_key"
-            android:defaultValue="@string/pref_theme_default_value"
-            android:summary="@string/pref_theme_summary"/>
+        android:defaultValue="@string/pref_theme_default_value"
+        android:entries="@array/pref_theme_entries"
+        android:entryValues="@array/pref_theme_values"
+        android:key="@string/pref_theme_key"
+        android:summary="@string/pref_theme_summary"
+        android:title="@string/pref_theme_title" />
 
     <EditTextPreference
-            android:title="@string/pref_email_cc_title"
-            android:summary="@string/pref_email_cc_summary"
-            android:key="@string/pref_email_cc_key"
-            android:persistent="true"/>
+        android:key="@string/pref_email_cc_key"
+        android:persistent="true"
+        android:summary="@string/pref_email_cc_summary"
+        android:title="@string/pref_email_cc_title" />
 
 </PreferenceScreen>

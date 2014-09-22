@@ -12,6 +12,7 @@ public class LoadLinksTask extends AsyncTask<Integer, Void, List<Link>> {
 
     private final DBAccess dbAccess;
     private final OnFinishedLoadingListener listener;
+
     public LoadLinksTask(final Context context, final OnFinishedLoadingListener listener) {
         dbAccess = new DBAccess(context);
         this.listener = listener;
