@@ -1,4 +1,4 @@
-package com.github.alexghr.bulkshare;
+package me.alexghr.android.bulkshare;
 
 import android.app.AlertDialog;
 import android.app.ListFragment;
@@ -20,9 +20,9 @@ import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.Toast;
 
-import com.github.alexghr.bulkshare.db.DBAccess;
-import com.github.alexghr.bulkshare.db.Link;
-import com.github.alexghr.bulkshare.logic.LoadLinksTask;
+import me.alexghr.android.bulkshare.db.DBAccess;
+import me.alexghr.android.bulkshare.db.Link;
+import me.alexghr.android.bulkshare.logic.LoadLinksTask;
 
 import java.util.List;
 

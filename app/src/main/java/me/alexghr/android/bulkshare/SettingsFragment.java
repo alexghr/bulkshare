@@ -1,4 +1,4 @@
-package com.github.alexghr.bulkshare;
+package me.alexghr.android.bulkshare;
 
 
 import android.os.Bundle;

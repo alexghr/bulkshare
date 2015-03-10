@@ -1,4 +1,4 @@
-package com.github.alexghr.bulkshare.db.tables;
+package me.alexghr.android.bulkshare.db.tables;
 
 public class ListsTable {
 

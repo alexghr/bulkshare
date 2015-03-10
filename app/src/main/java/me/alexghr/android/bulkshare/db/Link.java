@@ -1,4 +1,4 @@
-package com.github.alexghr.bulkshare.db;
+package me.alexghr.android.bulkshare.db;
 
 public class Link {
 

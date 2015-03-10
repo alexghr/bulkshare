@@ -1,12 +1,12 @@
-package com.github.alexghr.bulkshare.db;
+package me.alexghr.android.bulkshare.db;
 
 import android.content.ContentValues;
 import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
-import com.github.alexghr.bulkshare.db.tables.LinksTable;
-import com.github.alexghr.bulkshare.db.tables.ListsTable;
+import me.alexghr.android.bulkshare.db.tables.LinksTable;
+import me.alexghr.android.bulkshare.db.tables.ListsTable;
 
 public class DBOpener extends SQLiteOpenHelper {
 

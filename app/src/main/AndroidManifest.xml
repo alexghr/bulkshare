@@ -1,5 +1,5 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.github.alexghr.bulkshare">
+    package="me.alexghr.android.bulkshare">
 
     <application
         android:allowBackup="true"
