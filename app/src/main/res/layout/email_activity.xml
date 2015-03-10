@@ -9,9 +9,8 @@
         android:id="@+id/flListContainer"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_above="@+id/btnSend"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:paddingBottom="8dp"
-        android:paddingTop="8dp"></FrameLayout>
+        android:paddingTop="8dp"/>
 </RelativeLayout>
