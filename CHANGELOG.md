@@ -9,7 +9,7 @@ Nothing yet
 
 ## v1.1.0 - 2015-04-04
 ### Added
-- Czech translation - #1
+- Czech translation - [#1](https://github.com/alexghr/bulkshare/pull/1)
 
 ## v1.0.0 - 2015-03-10
 Initial release
