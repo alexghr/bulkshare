@@ -5,10 +5,10 @@
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
-        android:theme="@style/Theme.BulkShare">
+        android:theme="@style/BulkShare">
 
         <activity
-            android:name="me.alexghr.bulkshare.android.app2.ShareActivity"
+            android:name=".ShareActivity"
             android:excludeFromRecents="true"
             android:finishOnTaskLaunch="true"
             android:label="@string/share_chooser_name"
@@ -23,9 +23,7 @@
 
         </activity>
 
-        <activity
-            android:name="me.alexghr.bulkshare.android.app2.EmailActivity"
-            android:screenOrientation="portrait">
+        <activity android:name=".EmailActivity">
 
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -34,9 +32,7 @@
 
         </activity>
 
-        <activity
-            android:name="me.alexghr.bulkshare.android.app2.SettingsActivity"
-            android:screenOrientation="portrait" />
+        <activity android:name=".SettingsActivity"/>
 
     </application>
 </manifest>

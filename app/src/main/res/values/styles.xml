@@ -1,8 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <style name="Theme.BulkShare" parent="android:Theme.Holo">
-
+    <style name="BulkShare">
+        <item name="android:screenOrientation">portrait</item>
     </style>
 
+
+    <style name="BulkShare.OverflowMenuBtn">
+        <item name="android:src">@drawable/ic_more_vert_white_24dp</item>
+    </style>
+
+    <style name="BulkShare.Light" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="actionOverflowButtonStyle">@style/BulkShare.OverflowMenuBtn</item>
+    </style>
+
+    <style name="BulkShare.Dark" parent="Theme.AppCompat">
+        <item name="actionOverflowButtonStyle">@style/BulkShare.OverflowMenuBtn</item>
+    </style>
 </resources>
