@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Bulk Share</string>
-    <string name="share_chooser_name">Add to Bulk Share</string>
+    <string name="app_name">Bulkshare 2</string>
+    <string name="share_chooser_name">Add to Bulkshare 2</string>
 
     <string name="item_long_press_open_in_browser">Open in browser</string>
     <string name="item_long_press_copy_to_clipboard">Copy link to clipboard</string>
@@ -15,13 +15,17 @@
     <string name="pref_theme_title">Theme</string>
 
     <string name="pref_email_cc_summary">Pre-insert these emails when sharing. Separate them by one space.</string>
-    <string name="pref_theme_summary">Choose a theme for Bulk Share</string>
+    <string name="pref_theme_summary">Choose a theme for Bulkshare 2</string>
 
-    <string name="pref_theme_holo_dark">Holo Dark</string>
-    <string name="pref_theme_holo_light">Holo Light</string>
+    <string name="pref_theme_holo_dark">Dark</string>
+    <string name="pref_theme_holo_light">Light</string>
 
     <string name="pref_theme_holo_dark_value">0</string>
     <string name="pref_theme_holo_light_value">1</string>
 
     <string name="pref_theme_default_value">@string/pref_theme_holo_dark_value</string>
+
+    <string name="toast_link_added">Added</string>
+    <string name="toast_link_duplicate">Duplicate link</string>
+
 </resources>

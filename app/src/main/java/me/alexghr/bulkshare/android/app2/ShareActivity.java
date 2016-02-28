@@ -1,12 +1,12 @@
-package me.alexghr.android.bulkshare;
+package me.alexghr.bulkshare.android.app2;
 
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Toast;
 
-import me.alexghr.android.bulkshare.db.DBAccess;
-import me.alexghr.android.bulkshare.db.Link;
+import me.alexghr.bulkshare.android.app2.db.DBAccess;
+import me.alexghr.bulkshare.android.app2.db.Link;
 
 public class ShareActivity extends Activity {
 
@@ -25,9 +25,14 @@ public class ShareActivity extends Activity {
         }
 
         DBAccess dbAccess = new DBAccess(this);
-        dbAccess.insertNewLink(link);
+        long id = dbAccess.insertNewLink(link);
 
-        Toast.makeText(this, "Got something", Toast.LENGTH_SHORT).show();
+        if (id > -1) {
+            Toast.makeText(this, R.string.toast_link_added, Toast.LENGTH_SHORT).show();
+        } else {
+            Toast.makeText(this, R.string.toast_link_duplicate, Toast.LENGTH_SHORT).show();
+        }
+
         finish();
     }
 }

@@ -1,17 +1,17 @@
-package me.alexghr.android.bulkshare.db;
+package me.alexghr.bulkshare.android.app2.db;
 
 import android.content.ContentValues;
 import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
-import me.alexghr.android.bulkshare.db.tables.LinksTable;
-import me.alexghr.android.bulkshare.db.tables.ListsTable;
+import me.alexghr.bulkshare.android.app2.db.tables.LinksTable;
+import me.alexghr.bulkshare.android.app2.db.tables.ListsTable;
 
 public class DBOpener extends SQLiteOpenHelper {
 
     public static final String DB_NAME = "bulkshare";
-    public static final int DB_VER = 1;
+    public static final int DB_VER = 2;
 
     public DBOpener(Context context) {
         super(context, DB_NAME, null, DB_VER);
@@ -20,7 +20,7 @@ public class DBOpener extends SQLiteOpenHelper {
     @Override
     public void onCreate(SQLiteDatabase db) {
         db.execSQL(ListsTable.SQL_CREATE);
-        db.execSQL(LinksTable.SQL_CREATE);
+        db.execSQL(LinksTable.SQL_CREATE_V2);
 
         ContentValues values = new ContentValues();
         values.put(ListsTable.COLUMN_NAME, "Default");
@@ -30,8 +30,14 @@ public class DBOpener extends SQLiteOpenHelper {
 
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
-        /*db.execSQL(LinksTable.SQL_DROP);
-        db.execSQL(ListsTable.SQL_DROP);
-        onCreate(db);*/
+        if (oldVersion == 1 && newVersion == 2) {
+            upgrade1To2(db);
+        } else {
+            throw new RuntimeException(String.format("Unknown DB versions old=%d new=%d", oldVersion, newVersion));
+        }
+    }
+
+    public void upgrade1To2(SQLiteDatabase db) {
+        // TODO
     }
 }

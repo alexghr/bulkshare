@@ -1,4 +1,4 @@
-package me.alexghr.android.bulkshare;
+package me.alexghr.bulkshare.android.app2;
 
 import android.app.AlertDialog;
 import android.app.ListFragment;
@@ -20,11 +20,11 @@ import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.Toast;
 
-import me.alexghr.android.bulkshare.db.DBAccess;
-import me.alexghr.android.bulkshare.db.Link;
-import me.alexghr.android.bulkshare.logic.LoadLinksTask;
-
 import java.util.List;
+
+import me.alexghr.bulkshare.android.app2.db.DBAccess;
+import me.alexghr.bulkshare.android.app2.db.Link;
+import me.alexghr.bulkshare.android.app2.logic.LoadLinksTask;
 
 public class LinksFragment extends ListFragment implements LoadLinksTask.OnFinishedLoadingListener {
 

@@ -1,32 +1,21 @@
-package me.alexghr.android.bulkshare;
+package me.alexghr.bulkshare.android.app2;
 
-import android.app.Activity;
 import android.app.Fragment;
 import android.content.Intent;
-import android.content.SharedPreferences;
 import android.os.Bundle;
-import android.preference.PreferenceManager;
 import android.view.Menu;
 import android.view.MenuItem;
 
-public class EmailActivity extends Activity {
+public class EmailActivity extends BaseActivity {
 
     public static final int MENU_ITEM_ID_SETTINGS = 0x39afd;
     private Fragment fragment;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
-        SharedPreferences settings = PreferenceManager.getDefaultSharedPreferences(this);
-        String theme = settings.getString(getString(R.string.pref_theme_key), "0");
-        if (theme.equals(getString(R.string.pref_theme_holo_dark_value))) {
-            setTheme(android.R.style.Theme_Holo);
-        } else {
-            setTheme(android.R.style.Theme_Holo_Light);
-        }
+        super.onCreate(savedInstanceState);
 
         setContentView(R.layout.email_activity);
-
-        super.onCreate(savedInstanceState);
 
         Bundle fragmentArgs = new Bundle();
         fragmentArgs.putInt(LinksFragment.ARGUMENT_LIST_ID, 1);

@@ -1,16 +1,21 @@
-package me.alexghr.android.bulkshare.db;
+package me.alexghr.bulkshare.android.app2.db;
 
 import android.content.ContentValues;
 import android.content.Context;
 import android.database.Cursor;
+import android.database.SQLException;
+import android.database.sqlite.SQLiteConstraintException;
 import android.database.sqlite.SQLiteDatabase;
+import android.util.Log;
 
-import me.alexghr.android.bulkshare.db.tables.LinksTable;
+import me.alexghr.bulkshare.android.app2.db.tables.LinksTable;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class DBAccess {
+
+    private static final String LOG_TAG = "bulkshare.db";
 
     private final DBOpener opener;
 
@@ -36,6 +41,9 @@ public class DBAccess {
             link.setId(id);
 
             return id;
+        } catch (SQLiteConstraintException e) {
+            Log.e(LOG_TAG, "Tried to insert a duplicate link", e);
+          return -1;
         } finally {
             db.close();
         }
