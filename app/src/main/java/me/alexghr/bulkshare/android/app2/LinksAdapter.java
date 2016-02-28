@@ -1,4 +1,4 @@
-package me.alexghr.android.bulkshare;
+package me.alexghr.bulkshare.android.app2;
 
 import android.content.Context;
 import android.text.Html;
@@ -8,7 +8,7 @@ import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.CheckedTextView;
 
-import me.alexghr.android.bulkshare.db.Link;
+import me.alexghr.bulkshare.android.app2.db.Link;
 
 import java.util.ArrayList;
 import java.util.List;

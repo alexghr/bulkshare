@@ -1,4 +1,4 @@
-package me.alexghr.android.bulkshare.db.tables;
+package me.alexghr.bulkshare.android.app2.db.tables;
 
 public class LinksTable {
 

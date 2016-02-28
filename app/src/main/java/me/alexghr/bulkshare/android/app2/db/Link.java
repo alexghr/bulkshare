@@ -1,4 +1,4 @@
-package me.alexghr.android.bulkshare.db;
+package me.alexghr.bulkshare.android.app2.db;
 
 public class Link {
 

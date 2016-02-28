@@ -1,12 +1,12 @@
-package me.alexghr.android.bulkshare;
+package me.alexghr.bulkshare.android.app2;
 
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Toast;
 
-import me.alexghr.android.bulkshare.db.DBAccess;
-import me.alexghr.android.bulkshare.db.Link;
+import me.alexghr.bulkshare.android.app2.db.DBAccess;
+import me.alexghr.bulkshare.android.app2.db.Link;
 
 public class ShareActivity extends Activity {
 

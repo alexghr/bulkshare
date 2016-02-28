@@ -1,11 +1,11 @@
-package me.alexghr.android.bulkshare.db;
+package me.alexghr.bulkshare.android.app2.db;
 
 import android.content.ContentValues;
 import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 
-import me.alexghr.android.bulkshare.db.tables.LinksTable;
+import me.alexghr.bulkshare.android.app2.db.tables.LinksTable;
 
 import java.util.ArrayList;
 import java.util.List;

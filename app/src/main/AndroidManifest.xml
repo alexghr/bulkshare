@@ -1,5 +1,5 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="me.alexghr.android.bulkshare">
+    package="me.alexghr.bulkshare.android.app2">
 
     <application
         android:allowBackup="true"
@@ -8,7 +8,7 @@
         android:theme="@style/Theme.BulkShare">
 
         <activity
-            android:name=".ShareActivity"
+            android:name="me.alexghr.bulkshare.android.app2.ShareActivity"
             android:excludeFromRecents="true"
             android:finishOnTaskLaunch="true"
             android:label="@string/share_chooser_name"
@@ -24,7 +24,7 @@
         </activity>
 
         <activity
-            android:name=".EmailActivity"
+            android:name="me.alexghr.bulkshare.android.app2.EmailActivity"
             android:screenOrientation="portrait">
 
             <intent-filter>
@@ -35,7 +35,7 @@
         </activity>
 
         <activity
-            android:name=".SettingsActivity"
+            android:name="me.alexghr.bulkshare.android.app2.SettingsActivity"
             android:screenOrientation="portrait" />
 
     </application>

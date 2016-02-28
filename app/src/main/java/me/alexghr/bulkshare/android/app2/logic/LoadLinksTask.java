@@ -1,10 +1,10 @@
-package me.alexghr.android.bulkshare.logic;
+package me.alexghr.bulkshare.android.app2.logic;
 
 import android.content.Context;
 import android.os.AsyncTask;
 
-import me.alexghr.android.bulkshare.db.DBAccess;
-import me.alexghr.android.bulkshare.db.Link;
+import me.alexghr.bulkshare.android.app2.db.DBAccess;
+import me.alexghr.bulkshare.android.app2.db.Link;
 
 import java.util.List;
 
