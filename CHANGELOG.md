@@ -5,6 +5,9 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 This file uses the format specified by [keepachangelog.com](http://keepachangelog.com)
 
 ## Unreleased
+N/A
+
+## v2.0.0 - 2016-02-28
 ### Changed
 - [#5] - Update theme to Material design
 
