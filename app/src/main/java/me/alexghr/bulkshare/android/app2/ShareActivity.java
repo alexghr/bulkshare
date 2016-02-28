@@ -25,9 +25,14 @@ public class ShareActivity extends Activity {
         }
 
         DBAccess dbAccess = new DBAccess(this);
-        dbAccess.insertNewLink(link);
+        long id = dbAccess.insertNewLink(link);
 
-        Toast.makeText(this, "Got something", Toast.LENGTH_SHORT).show();
+        if (id > -1) {
+            Toast.makeText(this, R.string.toast_link_added, Toast.LENGTH_SHORT).show();
+        } else {
+            Toast.makeText(this, R.string.toast_link_duplicate, Toast.LENGTH_SHORT).show();
+        }
+
         finish();
     }
 }

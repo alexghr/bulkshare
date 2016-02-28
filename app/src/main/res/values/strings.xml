@@ -17,11 +17,15 @@
     <string name="pref_email_cc_summary">Pre-insert these emails when sharing. Separate them by one space.</string>
     <string name="pref_theme_summary">Choose a theme for BulkShare</string>
 
-    <string name="pref_theme_holo_dark">Holo Dark</string>
-    <string name="pref_theme_holo_light">Holo Light</string>
+    <string name="pref_theme_holo_dark">Dark</string>
+    <string name="pref_theme_holo_light">Light</string>
 
     <string name="pref_theme_holo_dark_value">0</string>
     <string name="pref_theme_holo_light_value">1</string>
 
     <string name="pref_theme_default_value">@string/pref_theme_holo_dark_value</string>
+
+    <string name="toast_link_added">Added</string>
+    <string name="toast_link_duplicate">Duplicate link</string>
+
 </resources>

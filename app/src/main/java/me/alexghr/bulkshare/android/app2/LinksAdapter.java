@@ -8,10 +8,10 @@ import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.CheckedTextView;
 
-import me.alexghr.bulkshare.android.app2.db.Link;
-
 import java.util.ArrayList;
 import java.util.List;
+
+import me.alexghr.bulkshare.android.app2.db.Link;
 
 public class LinksAdapter extends BaseAdapter {
 

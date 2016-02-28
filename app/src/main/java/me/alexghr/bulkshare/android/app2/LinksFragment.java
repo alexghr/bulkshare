@@ -20,11 +20,11 @@ import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.Toast;
 
+import java.util.List;
+
 import me.alexghr.bulkshare.android.app2.db.DBAccess;
 import me.alexghr.bulkshare.android.app2.db.Link;
 import me.alexghr.bulkshare.android.app2.logic.LoadLinksTask;
-
-import java.util.List;
 
 public class LinksFragment extends ListFragment implements LoadLinksTask.OnFinishedLoadingListener {
 

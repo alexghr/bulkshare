@@ -12,7 +12,7 @@ public class LinksTable {
 
     public static final String SQL_CREATE_V2 = "create table " + TABLE_NAME + "("
             + COLUMN_ID + " integer primary key, "
-            + COLUMN_LINK + " text not null, "
+            + COLUMN_LINK + " text not null unique, "
             + COLUMN_TITLE + " text not null default '', "
             + COLUMN_SENT + " integer default 0, "
             + COLUMN_LIST_ID + " integer default 1)";
