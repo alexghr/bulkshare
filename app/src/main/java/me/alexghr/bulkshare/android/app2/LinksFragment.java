@@ -111,10 +111,10 @@ public class LinksFragment extends ListFragment implements LoadLinksTask.OnFinis
 
             String title = link.getTitle();
             if (title != null && !title.isEmpty()) {
-                builder.append(title).append(" - ");
+                builder.append(title).append("<br>");
             }
 
-            builder.append(link.getLink()).append("<br/>");
+            builder.append(link.getLink()).append("<br><br>");
         }
 
         builder.append("</body></html>");
