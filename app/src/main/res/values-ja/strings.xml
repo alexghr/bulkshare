@@ -13,9 +13,11 @@
 
     <string name="pref_email_cc_title">メール先</string>
     <string name="pref_theme_title">テーマ</string>
+    <string name="pref_email_subject_title">メールの件名</string>
 
     <string name="pref_email_cc_summary">共有するときにこれらのメールを挿入します。スペースで区切ってください。</string>
     <string name="pref_theme_summary">Bulkshare 2 のテーマを選択します</string>
+    <string name="pref_email_subject_summary">メールの件名を設定します。</string>
 
     <string name="pref_theme_holo_dark">ダーク</string>
     <string name="pref_theme_holo_light">ライト</string>

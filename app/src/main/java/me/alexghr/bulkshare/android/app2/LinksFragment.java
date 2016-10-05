@@ -119,14 +119,16 @@ public class LinksFragment extends ListFragment implements LoadLinksTask.OnFinis
 
         builder.append("</body></html>");
 
+        SharedPreferences settings = PreferenceManager.getDefaultSharedPreferences(getActivity());
+
         Intent intent = new Intent(Intent.ACTION_SEND);
         intent.setType("text/html");
-        intent.putExtra(Intent.EXTRA_SUBJECT, "Stuff");
         intent.putExtra(Intent.EXTRA_TEXT, Html.fromHtml(builder.toString()));
 
-        SharedPreferences settings = PreferenceManager.getDefaultSharedPreferences(getActivity());
-        String emails = settings.getString(getString(R.string.pref_email_cc_key), "");
+        String subject = settings.getString(getString(R.string.pref_email_subject_key), "");
+        intent.putExtra(Intent.EXTRA_SUBJECT, subject);
 
+        String emails = settings.getString(getString(R.string.pref_email_cc_key), "");
         intent.putExtra(Intent.EXTRA_EMAIL, emails.split(" "));
 
         startActivity(Intent.createChooser(intent, "Select your email app"));

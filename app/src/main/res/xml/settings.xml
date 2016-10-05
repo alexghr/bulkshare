@@ -12,6 +12,12 @@
         android:title="@string/pref_theme_title" />
 
     <EditTextPreference
+        android:key="@string/pref_email_subject_key"
+        android:persistent="true"
+        android:summary="@string/pref_email_subject_summary"
+        android:title="@string/pref_email_subject_title" />
+
+    <EditTextPreference
         android:key="@string/pref_email_cc_key"
         android:persistent="true"
         android:summary="@string/pref_email_cc_summary"

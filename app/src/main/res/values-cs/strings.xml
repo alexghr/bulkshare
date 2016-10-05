@@ -13,9 +13,11 @@
 
     <string name="pref_email_cc_title">Poslat emailem</string>
     <string name="pref_theme_title">Vzhled</string>
+    <string name="pref_email_subject_title">Předmět emailu</string>
 
     <string name="pref_email_cc_summary">Při sdílení předvyplňovat tyto emaily. Oddělit jednou mezerou.</string>
     <string name="pref_theme_summary">Vybrat vzhled pro Bulkshare 2</string>
+    <string name="pref_email_subject_summary">Nastavit předmět e-mailu</string>
 
     <string name="pref_theme_holo_dark">Tmavý</string>
     <string name="pref_theme_holo_light">Světlý</string>

@@ -9,13 +9,16 @@
     <string name="item_long_press_toggle_check">Toggle check</string>
 
     <string name="pref_email_cc_key">pref_email</string>
+    <string name="pref_email_subject_key">pref_email_subject</string>
     <string name="pref_theme_key">pref_key</string>
 
     <string name="pref_email_cc_title">Email to</string>
     <string name="pref_theme_title">Theme</string>
+    <string name="pref_email_subject_title">Email subject</string>
 
     <string name="pref_email_cc_summary">Pre-insert these emails when sharing. Separate them by one space.</string>
     <string name="pref_theme_summary">Choose a theme for Bulkshare 2</string>
+    <string name="pref_email_subject_summary">Set the email subject</string>
 
     <string name="pref_theme_holo_dark">Dark</string>
     <string name="pref_theme_holo_light">Light</string>
